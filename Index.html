@@ -1,25 +1,32 @@
-function getCount(str) {
+<html>
+
+<script>
+alert("Started");
+getCount();
+function getCount(){
+    alert("for running");
+    var str = ("hdsjsjanbjkjajfjhjkujklsiskfsjlafuiafakjabvnjfe");
   var vowelsCount = 0;
-  var lenghtOfCount = getCount.length;
+  var lengthOfCount = str.length;
   
-  for(lengthOfCount > 0){
+  while(lengthOfCount > 0){
   
-  var a = getCount.serach("a");
+  var a = str.search("a");
   if(a > 0){
   vowelsCount = vowelsCount + 1;
   var a = 0;
   }
-  var e = getCount.serach("e");
+  var e = str.search("e");
   if(e > 0){
   vowelsCount = vowelsCount + 1;
   var e = 0;
   }
-  var i = getCount.serach("i");
+  var i = str.search("i");
   if(i > 0){
   vowelsCount = vowelsCount + 1;
   var i = 0;
   }
-  var u = getCount.serach("u");
+  var u = str.search("u");
   if(u > 0){
   vowelsCount = vowelsCount + 1;
   var u = 0;
@@ -28,5 +35,9 @@ function getCount(str) {
  lengthOfCount = lengthOfCount - 1;
   }
   
-  return vowelsCount;
-}
+  alert(vowelsCount);
+}  
+    
+</script>
+
+</html>
