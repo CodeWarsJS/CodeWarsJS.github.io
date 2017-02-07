@@ -5,30 +5,38 @@ alert("Started");
 getCount();
 function getCount(){
     alert("for running");
-    var str = ("hdsjsjanbjkjajfjhjkujklsiskfsjlafuiafakjabvnjfe");
+    var str = ("hew");
   var vowelsCount = 0;
   var lengthOfCount = str.length;
   
   while(lengthOfCount > 0){
   
-  var a = str.search("a");
-  if(a > 0){
+  var a = str.indexOf("a");
+  if(a === 1){
   vowelsCount = vowelsCount + 1;
+  var val = 'a';
+  str = str.replace(new RegExp(val), '');
   var a = 0;
   }
-  var e = str.search("e");
-  if(e > 0){
+  var e = str.indexOf("e");
+  if(e === 1){
   vowelsCount = vowelsCount + 1;
+  var val = 'e';
+  str = str.replace(new RegExp(val), '');
   var e = 0;
   }
-  var i = str.search("i");
-  if(i > 0){
+  var i = str.indexOf("i");
+  if(i === 1){
   vowelsCount = vowelsCount + 1;
+  var val = 'i';
+  str = str.replace(new RegExp(val), '');
   var i = 0;
   }
-  var u = str.search("u");
-  if(u > 0){
+  var u = str.indexOf("u");
+  if(u === 1){
   vowelsCount = vowelsCount + 1;
+  var val = 'u';
+  str = str.replace(new RegExp(val), '');
   var u = 0;
   }
   
